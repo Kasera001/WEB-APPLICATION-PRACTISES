@@ -7,19 +7,22 @@
 <body style ="background-color: powderblue">
     <h1 style=" font-family: 'Times New Roman', Times, serif;"><b>Stella's Café</b></h1>
     <h2>Main Menu</h2>
-    <ul>
+    <ul list style type ="square">
         <li><b>Hot Drinks</b></li>
-            <ul>
-            <li>Kenyan Tea</li>
-            <li>Masala Tea</li>
-            <li>Black Tea</li>
-            <li>Coffee</li>
-            <li>Cappuccino</li>
-            <li>Café Latte</li>
-            <li>Espresso</li>
-            <li>Ginger Tea</li>
+                <ul><b>Tea</b>
+                <li>Kenyan Tea</li>
+                <li>Masala Tea</li>
+                <li>Black Tea</li>
+                <li>Ginger Tea</li>
+                </ul>
+            <ul><b>Coffee</b>
+                <li>Cappuccino</li>
+                <li>Café Latte</li>
+                <li>Espresso</li>
+                <li>Ginger Tea</li>
+                </ul>
             <li>Hot Chocolate</li>
-            </ul>
+            
         <li><b>Cold Drinks</b></li>
             <ul>
             <li>Fresh Juice</li>
@@ -80,6 +83,25 @@
             </ol>
         </ul>
     </ul>
+<form>
+    <h2>Reservation form</h2>
+    <h3>Customer details and booking information</h3>
+    <label>Client Name:</label><input type = "text" placeholder="Your Name" maxlength="100" name="Uname"><br><br>
+    Contact:<input type ="tel"placeholder ="Enter phone number"><br><br>
+    Email:<input type ="email"placeholder ="Enter email"><br><br>
+    Date and time:<input type ="datetime-local"><br><br>
+    Number of guests:<input type ="number"placeholder="How many guests"><br><br>
+    Occassion:<br><input type ="checkbox"name="Birthday">Birthday</input><br>
+            <input type ="checkbox"name="Birthday">Anniversary</input><br>
+            <input type ="checkbox"name="Wedding">Wedding</input><br>
+            <input type ="checkbox"name="Get">Getaway</input><br>
+            <input type ="checkbox"name="Koito">Koito</input><br><br>
+
+    Dietary Notes:<br><textarea cols="30"rows="9"name="Dietary notes"placeholder="Any restriction in diet ?"></textarea><br>
+    <h2>Order form</h2>
+    <h3>Customer's Needed Item</h3>
+
+</form>
     <hr>
     
     <p>&copy; 2026 Stella's Café. All rights reserved.</p>
