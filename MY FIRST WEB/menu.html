@@ -84,24 +84,89 @@
         </ul>
     </ul>
 <form>
-    <h2>Reservation form</h2>
-    <h3>Customer details and booking information</h3>
-    <label>Client Name:</label><input type = "text" placeholder="Your Name" maxlength="100" name="Uname"><br><br>
-    Contact:<input type ="tel"placeholder ="Enter phone number"><br><br>
-    Email:<input type ="email"placeholder ="Enter email"><br><br>
-    Date and time:<input type ="datetime-local"><br><br>
-    Number of guests:<input type ="number"placeholder="How many guests"><br><br>
-    Occassion:<br><input type ="checkbox"name="Birthday">Birthday</input><br>
-            <input type ="checkbox"name="Birthday">Anniversary</input><br>
+    
+    <h2>Reservation form and booking</h2>
+    <fieldset>
+    <legend>Customer details</legend>
+    <label for="Uname">Client Name:</label><input type = "text" placeholder="Your Name" maxlength="100" name="Uname"><br><br>
+    <label for="contact">Contact:</label><input type ="tel"placeholder ="Enter phone number"><br><br>
+    <label for="email">Email:</label><input type ="email"placeholder ="Enter email"><br><br>
+    </fieldset>
+    
+    <br>
+    
+    <fieldset>
+    <legend>Reservation details</legend>
+    <br>Occasion:
+            <br><input type ="checkbox"name="Birthday">Birthday</input><br>
+            <input type ="checkbox"name="Anniversary">Anniversary</input><br>
             <input type ="checkbox"name="Wedding">Wedding</input><br>
-            <input type ="checkbox"name="Get">Getaway</input><br>
+            <input type ="checkbox"name="Getaway">Getaway</input><br>
             <input type ="checkbox"name="Koito">Koito</input><br><br>
+        Date and time:<input type ="datetime-local"><br><br>
+        Number of guests:<input type ="number"placeholder="How many guests"><br><br>
+        seating preference:<br><input type ="radio"name="indoor">Indoor</input><br>
+        <input type ="radio"name="outdoor">Outdoor</input><br>
+        <input type ="radio" name="2-seater">2-seater</input><br>
+        <input type ="radio"name="4-seater">4-seater</input><br>
+        <input type ="radio"name="6-seater">6-seater</input><br><br>
+    </fieldset>
+    
+    <br>
+    
+    <fieldset>
+        <legend>Dietary/Special Requests</legend>
+    dietary notes:<br><textarea cols="40"rows="4"name="Dietary notes"placeholder="Any restriction in diet ?"></textarea><br>
+    <label for="special_requests">Special Requests:</label><br>
+    <textarea name="special_requests" cols="40"rows="4"placeholder="Any special requests you wish to make?"></textarea><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Order Details</legend>
+    <label for="order">Order:</label><br>
+    <select name="order" id="order">
+        <option value="tea">Tea</option>
+        <option value="coffee">Coffee</option>
+        <option value="hot_chocolate">Hot Chocolate</option>
+        <option value="fresh_juice">Fresh Juice</option>
+        <option value="smoothies">Smoothies</option>
+        <option value="iced_coffee">Iced Coffee</option>
+        <option value="iced_tea">Iced Tea</option>
+        <option value="milkshakes">Milkshakes</option>
+        <option value="omelette">Omelette</option>
+        <option value="pancakes">Pancakes</option>
+        <option value="french_toast">French Toast</option>
+        <option value="breakfast_burrito">Breakfast Burrito</option>
+        <option value="avocado_toast">Avocado Toast</option>
+    </select><br><br>
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" min="1" max="10"><br><br>
+    
+</fieldset>
+    <fieldset>
+        <legend>Payment Details</legend>
+    <label for="payment_method">Payment Method:</label><br>
+    <input type="radio" name="payment_method" value="cash">Cash<br>
+    <input type="radio" name="payment_method" value="credit_card">Credit Card<br>
+    <input type="radio" name="payment_method" value="M-pesa">M-Pesa<br><br>
+    
+    <label for="card_number">Card Number:</label>
+    <input type="text" name="card_number" placeholder="Enter card number" ><br><br>
+    
+    <label for="expiry_date">Expiry Date:</label>
+    <input type="month" name="expiry_date"><br><br>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" name="cvv" placeholder="Enter CVV" ><br><br>
 
-    Dietary Notes:<br><textarea cols="30"rows="9"name="Dietary notes"placeholder="Any restriction in diet ?"></textarea><br>
-    <h2>Order form</h2>
-    <h3>Customer's Needed Item</h3>
+    <label for="Phone number">Phone Number:</label>
+    <input type="tel" name="phone_number" placeholder="Enter phone number" ><br><br>
+    </fieldset><br><br>
 
+    <input type="submit" value="Place Order">
+    <button type="reset">Reset</button>
+    
 </form>
+
     <hr>
     
     <p>&copy; 2026 Stella's Café. All rights reserved.</p>
