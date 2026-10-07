@@ -2,4 +2,22 @@ fieldset legend{
     font-weight: bold;
     font-size: 1.2em;
     color: #333;
+    border: 1px solid #E6D5C3;
+    padding: 10px;
+    color: #6F4E37;
+    
+}
+.body{
+    background-color: #FFF8F0;
+    color: #2B1D14;
+    border: 1px solid #E6D5C3;
+    font-size: 16px;
+    padding: 20px;
+
+}
+.header{
+    color:#6F4E37;
+    text-decoration: underline;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
 }
