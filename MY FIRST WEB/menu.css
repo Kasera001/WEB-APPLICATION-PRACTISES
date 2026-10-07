@@ -1,23 +1,117 @@
-fieldset legend{
+* {
+    box-sizing: border-box;
+}
+
+fieldset legend {
     font-weight: bold;
     font-size: 1.2em;
-    color: #333;
     border: 1px solid #E6D5C3;
-    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    padding: 0 10px;
     color: #6F4E37;
-    
 }
-.body{
+fieldset
+{background-color: white;
+    border: 1px solid #E6D5C3;
+    border-radius: 8px;
+    padding:16px;
+    margin-bottom: 20px;
+}
+
+body {
     background-color: #FFF8F0;
     color: #2B1D14;
     border: 1px solid #E6D5C3;
     font-size: 16px;
     padding: 20px;
-
+    max-width: 800px;
+    margin: 20px auto;
+   font-family:Arial, Helvetica, sans-serif;
 }
-.header{
+
+h1,h2 {
     color:#6F4E37;
     text-decoration: underline;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
 
+
+
+button {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 4px 2px;
+    margin-bottom: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+background-color: #5A3E2B;
+}
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="datetime-local"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #E6D5C3;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #C68B59;
+}
+
+input[type="submit"],
+button {
+    background-color: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #C68B59;
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    color: #6F4E37;
+    border: 1px solid #6F4E37;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #E6D5C3;
+}
+
+body > p {
+    text-align: center;
+    color: #6F4E37;
 }
