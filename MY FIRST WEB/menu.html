@@ -157,26 +157,78 @@
     <fieldset>
         <legend>Order Details</legend>
         <label for="order">Order:</label><br>
-        <select name="order" id="order">
-            <option value="tea">Tea</option>
-            <option value="coffee">Coffee</option>
-            <option value="hot_chocolate">Hot Chocolate</option>
-            <option value="warm_milk">Warm Milk</option>
-            <option value="fresh_juice">Fresh Juice</option>
+        <select name="order" id="order" required>
+            <option value="">--Select an item--</option>
+            <optgroup label="Hot Drinks">
+                <option value="kenyan_tea">Kenyan Tea</option>
+                <option value="masala_tea">Masala Tea</option>
+                <option value="black_tea">Black Tea</option>
+                <option value="ginger_tea">Ginger Tea</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="cafe_latte">Café Latte</option>
+                <option value="espresso">Espresso</option>
+                <option value="gourmet_coffee">Gourmet Coffee</option>
+                <option value ="hot_chocolate">Hot Chocolate</option>
+            </optgroup>
+            
+            <optgroup label="Cold Drinks">
+                <option value="fresh_juice">Fresh Juice</option>
             <option value="smoothies">Smoothies</option>
             <option value="iced_tea">Iced Tea</option>
             <option value="iced_coffee">Iced Coffee</option>
             <option value="milkshakes">Milkshakes</option>
+            </optgroup> 
+            
+            <optgroup label="Breakfast">
             <option value="salad">Salad</option>
             <option value="omelette">Omelette</option>
             <option value="pancakes">Pancakes</option>
             <option value="french_toast">French Toast</option>
             <option value="breakfast_burrito">Breakfast Burrito</option>
             <option value="avocado_toast">Avocado Toast</option>
+            </optgroup>
+            
+            <optgroup label="Light Meals">
+                <option value="grilled_sandwiches">Grilled Sandwiches</option>
+                <option value="salads">Salads</option>
+                <option value="wraps">Wraps</option>
+                <option value="soups">Soups</option>
+            </optgroup>
+            
+            <optgroup label="Hearty Meals">
+                <option value="steak">Steak</option>
+                <option value="grilled_chicken">Grilled Chicken</option>
+                <option value="fish_and_chips">Fish and Chips</option>
+                <option value="pasta">Pasta</option>
+            </optgroup>
+            
+            <optgroup label="Snacks">
+                <option value="fries">Fries</option>
+                <option value="onion_rings">Onion Rings</option>
+                <option value="chicken_wings">Chicken Wings</option>
+                <option value="nachos">Nachos</option>
+            </optgroup>
+            
+            <optgroup label="Desserts">
+                <option value="chocolate_cake">Chocolate Cake</option>
+                <option value="apple_pie">Apple Pie</option>
+                <option value="tiramisu">Tiramisu</option>
+                <option value="croissants">Croissants</option>
+                <option value="danish_pastries">Danish Pastries</option>
+                <option value="cookies">Cookies</option>
+
+            </optgroup>
+            
+            <optgroup label="Café Specials">
+                <option value="special_coffee">Stella's Special Coffee</option>
+                <option value="signature_smoothie">Signature Smoothie</option>
+                <option value="chefs_choice_dessert">Chef's Choice Dessert</option>
+            </optgroup>
+
         </select><br><br>
 
         <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"><br><br>
     </fieldset>
 
     <br>
