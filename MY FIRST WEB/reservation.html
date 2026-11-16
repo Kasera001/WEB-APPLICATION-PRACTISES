@@ -2,108 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Café Menu</title>
+    <meta name = "viewport" content ="width=device-width,initial-scale=1.0">
+    <title>Reservation|café Menu</title>
     <link rel = 'stylesheet' href ='menu.css'>
 </head>
 <body>
-    nav
-    <a href ="#"Home>Home</a>
-    <a href = "#"About>About</a>
-    <a href ="#"Contact>Contact</a>
-    <header>
-        <h1><b>Stella's Café</b></h1>
+    <header class ="site-header">
+        <nav class = "main-nav">
+            <a href ="index.html">Home</a>
+            <a href = "menu.html">Menu</a>
+            <a href ="reservation.html">Reservation</a>
+        </nav>
+        <h1>Welcome To Stella's Caf</h1>
+        <p class="tagline">Book a Table Right Now</p>
     </header>
-    <h2>Main Menu</h2>
-    <ol>
-        <li><b>Hot Drinks</b></li>
-            <b>Tea</b>
-                <ul>
-                    <li>Kenyan Tea</li>
-                    <li>Masala Tea</li>
-                    <li>Black Tea</li>
-                    <li>Ginger Tea</li>
-                </ul>
-            <b>Coffee</b>
-                <ul>
-                    <li>Cappuccino</li>
-                    <li>Café Latte</li>
-                    <li>Espresso</li>
-                    <li>Gourmet Coffee</li>
-                </ul>
-        <li><b>Cold Drinks</b></li>
-            <ul>
-            <li>Fresh Juice</li>
-            <li>Smoothies</li>
-            <li>Iced Coffee</li>
-            <li>Iced Tea</li>
-            <li>Milkshakes</li>
-            </ul>
-        <li><b>Breakfast</b></li>
-            <ul>
-            <li>Omelette</li>
-            <li>Pancakes</li>
-            <li>French Toast</li>
-            <li>Breakfast Burrito</li>
-            <li>Avocado Toast</li>
-            </ul>
-        <li><b>Light Meals</b></li>
-            <ul>
-            <li>Grilled Sandwiches</li>
-            <li>Salads</li>
-            <li>Wraps</li>
-            <li>Soups</li>
-            </ul>
-        <li><b>Hearty Meals</b></li>
-            <ul>
-            <li>Steak</li>
-            <li>Grilled Chicken</li>
-            <li>Fish and Chips</li>
-            <li>Pasta</li>
-            </ul>
-        <li><b>Snacks</b></li>
-            <ul>
-            <li>Fries</li>
-            <li>Onion Rings</li>
-            <li>Chicken Wings</li>
-            <li>Nachos</li>
-            </ul>
-        <li><b>Desserts</b></li>
-          <b>Cakes</b>
-        <!-- it's very tasty-->
-            <ul>
-            <li>Chocolate Cake</li>
-            <li>Apple Pie</li>
-            <li>Tiramisu</li>
-            </ul>
-          <b>Pastries</b>
-            <ul>
-            <li>Croissants</li>
-            <li>Danish Pastries</li>
-            <li>Cookies</li>
-            </ul>
-    
-        <li><b>café Specials</b></li>
-            <ul>
-            <li>Stella's Special Coffee</li>
-            <li>Signature Smoothie</li>
-            <li>Chef's Choice Dessert</li>
-            </ul>
-    </ol>
-</form>
-<form method="POST" action="submit_reservation.php">
+
+<main>
+   <form method="POST" action="submit_reservation.php">
 
     <h2>Reservation form and booking</h2>
 
     <fieldset>
         <legend>Customer details</legend>
-        <label for="uname">Client Name:</label>
-        <input type="text" id="uname" name="uname" placeholder="Your Name" maxlength="100" required><br><br>
+        <div class="form-label"><label for="uname">Client Name:</label></div>
+        <input type="text" id="uname" name="uname" placeholder="Your Name" maxlength="100" autocomplete="name" required>
 
-        <label for="contact">Contact:</label>
-        <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required><br><br>
+        <div class="form-label"><label for="contact">Contact:</label></div>
+        <input type="tel" id="contact" name="contact" placeholder="Enter phone number" autocomplete="tel" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter email"><br><br>
+        <div class="form-label"><label for="email">Email:</label></div>
+        <input type="email" id="email" name="email" placeholder="Enter email" autocomplete="email">
     </fieldset>
 
     <fieldset>
@@ -111,60 +39,53 @@
         <fieldset>
             <legend>Occasion</legend>
             <input type="radio" id="birthday" name="occasion" value="birthday">
-            <label for="birthday">Birthday</label><br>
+            <div class="form-label"><label for="birthday">Birthday</label></div>
             <input type="radio" id="anniversary" name="occasion" value="anniversary">
-            <label for="anniversary">Anniversary</label><br>
+            <div class="form-label"><label for="anniversary">Anniversary</label></div>
             <input type="radio" id="wedding" name="occasion" value="wedding">
-            <label for="wedding">Wedding</label><br>
+            <div class="form-label"><label for="wedding">Wedding</label></div>
             <input type="radio" id="getaway" name="occasion" value="getaway">
-            <label for="getaway">Getaway</label><br>
+            <div class="form-label"><label for="getaway">Getaway</label></div>
             <input type="radio" id="koito" name="occasion" value="koito">
-            <label for="koito">Koito</label><br>
+            <div class="form-label"><label for="koito">Koito</label></div>
         </fieldset>
-        <br>
-        <label for="datetime">Date and time:</label>
-        <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+        <div class="form-label"><label for="datetime">Date and time:</label></div>
+        <input type="datetime-local" id="datetime" name="datetime" required>
 
-        <label for="guests">Number of guests:</label>
-        <input type="number" id="guests" name="guests" placeholder="How many guests" min="1" max="50" required><br><br>
+        <div class="form-label"><label for="guests">Number of guests:</label></div>
+        <input type="number" id="guests" name="guests" placeholder="How many guests" min="1" max="50" required>
 
     
         <fieldset>
             <legend>Seating preference</legend>
             <input type="radio" id="indoor" name="seating" value="indoor">
-            <label for="indoor">Indoor</label><br>
+            <div class="form-label"><label for="indoor">Indoor</label></div>
             <input type="radio" id="outdoor" name="seating" value="outdoor">
-            <label for="outdoor">Outdoor</label><br>
+            <div class="form-label"><label for="outdoor">Outdoor</label></div>
         </fieldset>
-        <br>
-
         <fieldset>
             <legend>Table size</legend>
             <input type="radio" id="seat2" name="table_size" value="2">
-            <label for="seat2">2-seater</label><br>
+            <div class="form-label"><label for="seat2">2-seater</label></div>
             <input type="radio" id="seat4" name="table_size" value="4">
-            <label for="seat4">4-seater</label><br>
+            <div class="form-label"><label for="seat4">4-seater</label></div>
             <input type="radio" id="seat6" name="table_size" value="6">
-            <label for="seat6">6-seater</label><br>
+            <div class="form-label"><label for="seat6">6-seater</label></div>
         </fieldset>
     </fieldset>
 
-    <br>
-
     <fieldset>
         <legend>Dietary/Special Requests</legend>
-        <label for="dietary_notes">Dietary notes:</label><br>
-        <textarea id="dietary_notes" name="dietary_notes" cols="40" rows="4" placeholder="Any restriction in diet?"></textarea><br>
+        <div class="form-label"><label for="dietary_notes">Dietary notes:</label></div>
+        <textarea id="dietary_notes" name="dietary_notes" cols="40" rows="4" placeholder="Any restriction in diet?"></textarea>
 
-        <label for="special_requests">Special Requests:</label><br>
-        <textarea id="special_requests" name="special_requests" cols="40" rows="4" placeholder="Any special requests you wish to make?"></textarea><br><br>
+        <div class="form-label"><label for="special_requests">Special Requests:</label></div>
+        <textarea id="special_requests" name="special_requests" cols="40" rows="4" placeholder="Any special requests you wish to make?"></textarea>
     </fieldset>
-
-    <br>
 
     <fieldset>
         <legend>Order Details</legend>
-        <label for="order">Order:</label><br>
+        <div class="form-label"><label for="order">Order:</label></div>
         <select name="order" id="order" required>
             <option value="">--Select an item--</option>
             <optgroup label="Hot Drinks">
@@ -176,7 +97,7 @@
                 <option value="cafe_latte">Café Latte</option>
                 <option value="espresso">Espresso</option>
                 <option value="gourmet_coffee">Gourmet Coffee</option>
-                <option value ="hot_chocolate">Hot Chocolate</option>
+                <option value="hot_chocolate">Hot Chocolate</option>
             </optgroup>
             
             <optgroup label="Cold Drinks">
@@ -188,7 +109,6 @@
             </optgroup> 
             
             <optgroup label="Breakfast">
-            <option value="salad">Salad</option>
             <option value="omelette">Omelette</option>
             <option value="pancakes">Pancakes</option>
             <option value="french_toast">French Toast</option>
@@ -233,13 +153,11 @@
                 <option value="chefs_choice_dessert">Chef's Choice Dessert</option>
             </optgroup>
 
-        </select><br><br>
+        </select>
 
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1"><br><br>
+        <div class="form-label"><label for="quantity">Quantity:</label></div>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
     </fieldset>
-
-    <br>
 
     <fieldset>
         <legend>Payment Details</legend>
@@ -248,21 +166,27 @@
         <fieldset>
             <legend>Payment method</legend>
             <input type="radio" id="cash" name="payment_method" value="cash">
-            <label for="cash">Cash</label><br>
+            <div class="form-label"><label for="cash">Cash</label></div>
             <input type="radio" id="credit_card" name="payment_method" value="credit_card">
-            <label for="credit_card">Credit Card (pay at the café)</label><br>
+            <div class="form-label"><label for="credit_card">Card (pay at the café)</label></div>
             <input type="radio" id="mpesa" name="payment_method" value="mpesa">
-            <label for="mpesa">M-Pesa</label><br>
+            <div class="form-label"><label for="mpesa">M-Pesa</label></div>
         </fieldset>
-        <br>
 
         
-        <label for="mpesa_number">M-Pesa number:</label>
+        <div class="form-label"><label for="mpesa_number">M-Pesa number:</label></div>
         <input type="tel" id="mpesa_number" name="mpesa_number" placeholder="e.g. 0712345678"
-               maxlength="10" pattern="0[17][0-9]{8}"><br><br>
+               autocomplete="tel" maxlength="10" pattern="0[17][0-9]{8}">
     </fieldset>
 
-    <br><br>
     <button type="submit">Place Order</button>
     <button type="reset">Reset</button>
-</form>
+   </form>
+</main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Stella's Café</p>
+        <p>Open daily | Contact: add your phone and email here</p>
+    </footer>
+
+</body>
