@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content ="width=device-width,initial-scale=1.0">
-    <title>Café Menu</title>
-    <link rel = 'stylesheet' href ='menu.css'>
+    <title>Menu | Stella's Café</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header class ="site-header">
-        <nav class = "main-nav">
-            <a href ="index.html">Home</a>
-            <a href = "menu.html">Menu</a>
-            <a href ="reservation.html">Reservation</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
         </nav>
-        <h1>Welcome To Stella's Cafe</h1>
+        <h1>Stella's Café</h1>
         <p class="tagline">Fresh drinks, hearty meals and sweet treats</p>
     </header>
     <main>
         <h2>Main Menu</h2>
         <div class="menu-grid">
-            <section class="menu-card">
-                <h3>Hot Drinks</h3>
+            <section class="menu-card" aria-labelledby="hot-drinks">
+                <h3 id="hot-drinks">Hot Drinks</h3>
                 <h4>Tea</h4>
                 <ul>
                     <li>Kenyan Tea</li>
                     <li>Masala Tea</li>
                     <li>Black Tea</li>
-                    <li>Hibisscus Tea</li>
+                    <li>Hibiscus Tea</li>
                     <li>Ginger Tea</li>
                 </ul>
                 <h4>Coffee</h4>
@@ -34,21 +34,21 @@
                     <li>Cappuccino</li>
                     <li>Cafe Latte</li>
                     <li>Espresso</li>
-                    <li>Gourment</li>
-                    <li>Iced coffee</li>
+                    <li>Gourmet Coffee</li>
+                    <li>Iced Coffee</li>
                 </ul>
             </section>
-            <section class="menu-card">
-                <h3>Cold Drinks</h3>
+            <section class="menu-card" aria-labelledby="cold-drinks">
+                <h3 id="cold-drinks">Cold Drinks</h3>
                 <ul>
                     <li>Fresh Juice</li>
                     <li>Smoothies</li>
                     <li>Matcha</li>
                     <li>Milkshakes</li>
-                    <li>Sof drinks(soda)</li>
+                    <li>Soft Drinks</li>
                 </ul>
             </section>
-            <section class ="menu-card">
+            <section class="menu-card">
                 <h3>Light meals</h3>
                 <ul>
                     <li>Grilled Sandwich</li>
@@ -61,7 +61,7 @@
             <section class="menu-card">
                 <h3>Hearty meals</h3>
                 <ul>
-                    <li>steak</li>
+                    <li>Steak</li>
                     <li>Grilled Chicken</li>
                     <li>Fish and Chips</li>
                     <li>Goat Ribs</li>
@@ -104,14 +104,14 @@
 
         </div>
 
-        <p class="cta">
-            <a class="button" href="reservation.html">Book a Table or Place an Order</a>
-        </p>
+        <div class="cta">
+            <a class="button" href="reservation.html">Book a Table or place an order</a>
+        </div>
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 Stella's Café</p>
-        <p>Open daily | Contact: add your phone and email here</p>
+        <p>Open daily · 01234567 · stellacafe@gmail.com</p>
     </footer>
 
 </body>

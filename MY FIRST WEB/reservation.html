@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content ="width=device-width,initial-scale=1.0">
-    <title>Reservation|café Menu</title>
-    <link rel = 'stylesheet' href ='menu.css'>
+    <title>Reserve a table | Stella's Café</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header class ="site-header">
-        <nav class = "main-nav">
-            <a href ="index.html">Home</a>
-            <a href = "menu.html">Menu</a>
-            <a href ="reservation.html">Reservation</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
         </nav>
-        <h1>Welcome To Stella's Caf</h1>
-        <p class="tagline">Book a Table Right Now</p>
+        <h1>Reserve your table</h1>
+        <p class="tagline">Tell us how we can make your visit special</p>
     </header>
 
 <main>
    <form method="POST" action="submit_reservation.php">
 
-    <h2>Reservation form and booking</h2>
+    <h2>Reservation and order details</h2>
 
     <fieldset>
         <legend>Customer details</legend>
@@ -179,14 +179,14 @@
                autocomplete="tel" maxlength="10" pattern="0[17][0-9]{8}">
     </fieldset>
 
-    <button type="submit">Place Order</button>
-    <button type="reset">Reset</button>
+    <button type="submit">Place reservation</button>
+    <button type="reset">Clear form</button>
    </form>
 </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 Stella's Café</p>
-        <p>Open daily | Contact: add your phone and email here</p>
+        <p>Open daily · 01234567 · stellacafe@gmail.com</p>
     </footer>
 
 </body>
